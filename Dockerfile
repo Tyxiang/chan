@@ -12,6 +12,6 @@ RUN pip install mpl-finance
 
 WORKDIR /app
 
-EXPOSE 8000
+EXPOSE 8001
 
-CMD gunicorn -w 4 -b 0.0.0.0:8000 app:app
+CMD gunicorn -w 4 -b 0.0.0.0:8001 app:app
