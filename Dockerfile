@@ -9,6 +9,7 @@ RUN pip install matplotlib
 RUN pip install numpy
 RUN pip install pandas
 RUN pip install mpl-finance
+RUN pip install pycryptodome
 
 WORKDIR /app
 
