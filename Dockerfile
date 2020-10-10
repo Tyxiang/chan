@@ -7,8 +7,11 @@ RUN pip install Flask-Cors
 RUN pip install jqdatasdk
 RUN pip install matplotlib
 RUN pip install numpy
-RUN pip install pandas
+
 RUN pip install mpl-finance
+
+RUN easy_install pandas
+RUN pip install --only-binary :all: pandas
 
 WORKDIR /app
 
