@@ -1,7 +1,6 @@
 FROM python:latest
 
 RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
 
 RUN pip install flask gunicorn --no-cache-dir
 RUN pip install Flask-Cors
