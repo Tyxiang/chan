@@ -2,6 +2,8 @@ FROM python:latest
 
 RUN pip install --upgrade pip
 
+RUN pip install pandas==0.25.3 
+
 RUN pip install flask gunicorn --no-cache-dir
 RUN pip install Flask-Cors
 RUN pip install jqdatasdk
